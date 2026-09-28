@@ -179,3 +179,90 @@ footer a{text-align:right;text-decoration:none}
   footer{padding:24px 18px 34px;grid-template-columns:1fr 1fr}
   footer span:nth-child(2){display:none}
 }
+
+
+.micro-joke{
+  display:block;
+  margin-top:10px;
+  font-size:12px;
+  color:#666;
+  letter-spacing:.03em;
+}
+
+.power-section{
+  border-top:1px solid var(--line);
+  padding:7vw 3vw;
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:6vw;
+  align-items:end;
+}
+.power-copy h2{
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:clamp(44px,6vw,86px);
+  line-height:.95;
+  letter-spacing:-.05em;
+  margin:0 0 20px;
+}
+.power-note{
+  max-width:520px;
+  color:#555;
+  line-height:1.6;
+  margin:0;
+}
+.power-panel{
+  border:1px solid var(--line);
+  padding:28px;
+  background:rgba(255,255,255,.18);
+}
+.power-readout{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:end;
+  margin-bottom:18px;
+}
+#powerValue{
+  font-family:Georgia,serif;
+  font-size:clamp(48px,7vw,92px);
+  line-height:.8;
+}
+#powerLabel{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  text-align:right;
+}
+.gauge{
+  height:22px;
+  border:1px solid var(--ink);
+  overflow:hidden;
+  position:relative;
+}
+.gauge-fill{
+  width:0%;
+  height:100%;
+  background:var(--accent);
+  transition:width .12s linear;
+}
+.gauge-scale{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  margin-top:10px;
+  font-size:10px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.gauge-scale span:nth-child(2){text-align:center}
+.gauge-scale span:nth-child(3){text-align:right}
+
+@media (max-width:900px){
+  .power-section{grid-template-columns:1fr;gap:36px}
+}
+
+@media (max-width:560px){
+  .power-section{padding:16vw 18px}
+  .power-panel{padding:20px}
+  .gauge-scale{font-size:9px}
+}
