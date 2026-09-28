@@ -1,65 +1,225 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Chanseok personal website" />
-  <title>Chanseok</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Chanseok — a curated visual archive.">
+  <title>Chanseok — Archive</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="#home">CHANSEOK</a>
-    <nav class="nav-links">
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top">CHANSEOK<span>®</span></a>
+    <nav>
+      <a href="#archive">Archive</a>
       <a href="#about">About</a>
-      <a href="#gallery">Photos</a>
-      <a href="#contact">Contact</a>
     </nav>
+    <span class="edition">2026 / EDITION 01</span>
   </header>
 
-  <main>
-    <section id="home" class="hero">
+  <main id="top">
+    <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">PERSONAL WEBSITE</p>
-        <h1>Hi, I'm Chanseok.</h1>
-        <p class="lead">Welcome to my personal website.</p>
-        <a class="button" href="#about">Learn more</a>
+        <p class="kicker">CURATED VISUAL ARCHIVE</p>
+        <h1>Chanseok,<br><em>in twenty frames.</em></h1>
+        <p class="intro">
+          A selection of portraits, office moments, accidental memes,
+          and a few images that probably deserved to stay in the group chat.
+        </p>
+        <a class="scroll-link" href="#archive">Explore the archive ↓</a>
       </div>
-
-      <div class="hero-photo-wrap">
-        <img class="hero-photo" src="images/profile1.jpg" alt="Chanseok profile photo" />
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <p class="eyebrow">ABOUT</p>
-      <h2>About Me</h2>
-      <p class="section-copy">
-        Add your introduction, career, interests, or other information here.
-      </p>
-    </section>
-
-    <section id="gallery" class="section">
-      <p class="eyebrow">PHOTOS</p>
-      <h2>Gallery</h2>
-
-      <div class="gallery">
-        <img src="images/profile1.jpg" alt="Portrait 1" />
-        <img src="images/profile2.jpg" alt="Portrait 2" />
-        <img src="images/profile3.jpg" alt="Portrait 3" />
+      <div class="hero-image">
+        <img src="assets/p01.jpg" alt="Chanseok portrait">
+        <div class="stamp">EST.<br>1982</div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <p class="eyebrow">CONTACT</p>
-      <h2>Contact</h2>
-      <p class="section-copy">Replace this with your email or social links.</p>
+    <section class="ticker" aria-hidden="true">
+      <div>PROFILE · WORK · MEMES · AI · ARCHIVE · PROFILE · WORK · MEMES · AI · ARCHIVE ·</div>
+    </section>
+
+    <section class="archive" id="archive">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">SELECTED / 20</p>
+          <h2>The Archive</h2>
+        </div>
+        <p class="section-note">Click any image to view it full size.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-full="assets/p01.jpg">
+      <div class="image-wrap"><img src="assets/p01.jpg" alt="Profile" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">01</span>
+        <div><h3>Profile</h3><p>The beginning.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p03.jpg">
+      <div class="image-wrap"><img src="assets/p03.jpg" alt="New Year" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">02</span>
+        <div><h3>New Year</h3><p>A polished corporate moment.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p04.jpg">
+      <div class="image-wrap"><img src="assets/p04.jpg" alt="One bite" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">03</span>
+        <div><h3>One bite</h3><p>A little chaos.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p05.jpg">
+      <div class="image-wrap"><img src="assets/p05.jpg" alt="Off the leash" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">04</span>
+        <div><h3>Off the leash</h3><p>Archive energy.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p08.jpg">
+      <div class="image-wrap"><img src="assets/p08.jpg" alt="Hello" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">05</span>
+        <div><h3>Hello</h3><p>An early introduction.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p09.jpg">
+      <div class="image-wrap"><img src="assets/p09.jpg" alt="Work mode" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">06</span>
+        <div><h3>Work mode</h3><p>Trying to survive the day.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p10.jpg">
+      <div class="image-wrap"><img src="assets/p10.jpg" alt="High five" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">07</span>
+        <div><h3>High five</h3><p>Better than expected.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p11.jpg">
+      <div class="image-wrap"><img src="assets/p11.jpg" alt="Interview" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">08</span>
+        <div><h3>Interview</h3><p>So, why did you apply?</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p12.jpg">
+      <div class="image-wrap"><img src="assets/p12.jpg" alt="Advice" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">09</span>
+        <div><h3>Advice</h3><p>The classic lecture pose.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p13.jpg">
+      <div class="image-wrap"><img src="assets/p13.jpg" alt="Got you" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">10</span>
+        <div><h3>Got you</h3><p>Caught in the moment.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p14.jpg">
+      <div class="image-wrap"><img src="assets/p14.jpg" alt="Decision" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">11</span>
+        <div><h3>Decision</h3><p>A suspicious smile.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p15.jpg">
+      <div class="image-wrap"><img src="assets/p15.jpg" alt="Regret" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">12</span>
+        <div><h3>Regret</h3><p>The morning-after expression.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p16.jpg">
+      <div class="image-wrap"><img src="assets/p16.jpg" alt="Ceremony" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">13</span>
+        <div><h3>Ceremony</h3><p>Waiting for it to end.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p17.jpg">
+      <div class="image-wrap"><img src="assets/p17.jpg" alt="Portrait" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">14</span>
+        <div><h3>Portrait</h3><p>A clean seated portrait.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p18.jpg">
+      <div class="image-wrap"><img src="assets/p18.jpg" alt="Stage" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">15</span>
+        <div><h3>Stage</h3><p>Hands: still undecided.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p19.jpg">
+      <div class="image-wrap"><img src="assets/p19.jpg" alt="Expression" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">16</span>
+        <div><h3>Expression</h3><p>Peak Chanseok.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p22.jpg">
+      <div class="image-wrap"><img src="assets/p22.jpg" alt="Duo" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">17</span>
+        <div><h3>Duo</h3><p>Strong duo energy.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p31.jpg">
+      <div class="image-wrap"><img src="assets/p31.jpg" alt="AI remix" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">18</span>
+        <div><h3>AI remix</h3><p>An AI-generated chaos montage.</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p32.jpg">
+      <div class="image-wrap"><img src="assets/p32.jpg" alt="Debugging" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">19</span>
+        <div><h3>Debugging</h3><p>Just one more bug…</p></div>
+      </div>
+    </article>
+<article class="card" data-full="assets/p37.jpg">
+      <div class="image-wrap"><img src="assets/p37.jpg" alt="Wink" loading="lazy"></div>
+      <div class="meta">
+        <span class="num">20</span>
+        <div><h3>Wink</h3><p>A perfect closer.</p></div>
+      </div>
+    </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-label">ABOUT THIS PAGE</div>
+      <div>
+        <h2>Not a résumé.<br>More like a character study.</h2>
+        <p>
+          This page turns a large image collection into a smaller editorial selection:
+          polished portraits beside awkward pauses, office photos beside internet humor.
+          The contrast is the point.
+        </p>
+      </div>
+      <div class="stat">
+        <strong>20</strong>
+        <span>selected frames</span>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Chanseok</p>
+    <span>CHANSEOK.COM</span>
+    <span>CURATED ARCHIVE / 2026</span>
+    <a href="#top">Back to top ↑</a>
   </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" aria-label="Close">×</button>
+    <img src="" alt="">
+  </div>
 
   <script src="script.js"></script>
 </body>
