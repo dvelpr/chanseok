@@ -42,7 +42,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeLightbox();
   if (e.key === 'ArrowRight') showImage(imageIndex + 1);
   if (e.key === 'ArrowLeft') showImage(imageIndex - 1);
-  if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); }
+  if (e.key === 'Tab') { const buttons=[...lb.querySelectorAll('button')]; const i=buttons.indexOf(document.activeElement); e.preventDefault(); buttons[(i+(e.shiftKey?-1:1)+buttons.length)%buttons.length].focus(); }
 });
 const gaugeFill = document.getElementById('gaugeFill');
 const powerValue = document.getElementById('powerValue');
@@ -119,3 +119,15 @@ bingoButtons.forEach(button => button.addEventListener('click', () => {
   button.setAttribute('aria-pressed', button.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); updateBingo();
 }));
 document.getElementById('resetBingo').addEventListener('click', () => { bingoButtons.forEach(button => button.setAttribute('aria-pressed', 'false')); updateBingo(); });
+
+// Visible navigation for touch and mouse users in addition to keyboard browsing.
+const previousImage = document.querySelector('.lb-prev');
+const nextImage = document.querySelector('.lb-next');
+previousImage.addEventListener('click', () => showImage(imageIndex - 1));
+nextImage.addEventListener('click', () => showImage(imageIndex + 1));
+const imageCounter = document.querySelector('.lb-count');
+new MutationObserver(() => {imageCounter.textContent = `${imageIndex + 1} / ${cards.length}`;}).observe(lbImg, {attributes: true, attributeFilter:['src']});
+const sectionObserver = new IntersectionObserver(entries => {
+  for (const entry of entries) if (entry.isIntersecting) document.querySelectorAll('.topbar nav a').forEach(link => link.classList.toggle('active', link.hash === '#' + entry.target.id));
+}, {rootMargin:'-15% 0px -65% 0px'});
+document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
