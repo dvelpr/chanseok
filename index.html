@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chanseok Archive — memes, boardroom bingo, and very unscientific CFO energy.">
+  <title>Chanseok Choi — Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top">CHANSEOK<span>®</span></a>
+    <nav>
+      <a href="#archive">Archive</a>
+      <a href="#playground">Play</a><a href="#fieldnotes">Field Notes</a><a href="#about">About</a>
+    </nav>
+    <span class="edition">2026 / EDITION 01</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">CURATED VISUAL ARCHIVE</p>
+        <h1>Chanseok,<br><em>in focus.</em></h1>
+        <p class="intro">
+          A face for every meeting. A spreadsheet for every situation. Welcome to a very unserious collection of Chanseok moments, boardroom energy, and corporate survival tools.
+          <span class="micro-joke">Warning: excessive spreadsheet energy ahead.</span>
+        </p>
+        <a class="scroll-link" href="#archive">Explore the archive ↓</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="assets/interview.png"
+          alt="Chanseok interview meme with a Korean speech bubble"
+        >
+        <div class="stamp">FAN MADE<br>100%</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div>CHANSEOK +4.2% · EXCEL +99% · COFFEE -18% · M&amp;A MODE ↑ · SLEEP -32% · SYNERGY UNCHANGED · CHANSEOK +4.2% ·</div>
+    </section>
+
+    <section class="archive" id="archive">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">SELECTED / 04</p>
+          <h2>The Archive</h2>
+        </div>
+        <p class="section-note">Four frames. Several questionable meeting decisions. Click to zoom.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-full="assets/profile-slide.png">
+          <div class="image-wrap">
+            <img src="assets/profile-slide.png" alt="Chanseok Choi profile slide" loading="lazy">
+          </div>
+          <div class="meta">
+            <span class="num">01</span>
+            <div>
+              <h3>Profile</h3>
+              <p>Pre-meeting confidence: suspiciously high.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-full="assets/interview.png">
+          <div class="image-wrap">
+            <img
+              src="assets/interview.png"
+              alt="Interview meme: 저희 회사에 왜 지원하셨죠"
+              loading="lazy"
+            >
+          </div>
+          <div class="meta">
+            <span class="num">02</span>
+            <div>
+              <h3>The Interview</h3>
+              <p>“저희 회사에 왜 지원하셨죠” · Wrong answers only.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-full="assets/high-five.png">
+          <div class="image-wrap">
+            <img
+              src="assets/high-five.png"
+              alt="Oversized high-five meme: 생각보다 재밌네 ㅋㅋ"
+              loading="lazy"
+            >
+          </div>
+          <div class="meta">
+            <span class="num">03</span>
+            <div>
+              <h3>Deal Closed. Hands Enlarged.</h3>
+              <p>“생각보다 재밌네 ㅋㅋ” · The handshake needed its own budget.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-full="assets/caught.png">
+          <div class="image-wrap">
+            <img
+              src="assets/caught.png"
+              alt="Smiling reaction meme: 잡았다 요놈"
+              loading="lazy"
+            >
+          </div>
+          <div class="meta">
+            <span class="num">04</span>
+            <div>
+              <h3>Caught in 4K</h3>
+              <p>“잡았다 요놈” · When the expense report says miscellaneous.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="power-section" id="power">
+      <div class="power-copy">
+        <p class="kicker">SCROLL METRIC / ZERO SCIENTIFIC VALUE</p>
+        <h2>CFO Power Level</h2>
+        <p class="power-note">Scroll to charge, or add a coffee for a little extra spreadsheet energy. No accounting standard recognizes this metric.</p>
+      </div>
+
+      <div class="power-panel">
+        <div class="power-readout">
+          <span id="powerValue">0%</span>
+          <span id="powerLabel">Intern Energy</span>
+        </div>
+
+        <div class="gauge" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="CFO Power Level">
+          <div class="gauge-fill" id="gaugeFill"></div>
+        </div>
+
+        <div class="gauge-scale">
+          <span>0% Intern</span>
+          <span>50% Spreadsheet</span>
+          <span>100% CFO Final Boss</span>
+        </div>
+        <div class="actions"><button id="coffeeButton" class="button" type="button">Add coffee +10 ☕</button><button id="resetPower" class="button ghost" type="button">Decaf reset</button></div>
+        <p id="coffeeNote" class="small" aria-live="polite">Coffee consumed: 0. Budget: imaginary.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="playground">
+      <div class="section-heading"><div><p class="kicker">SIDE QUESTS / NO LOGIN REQUIRED</p><h2>The Boardroom Playground</h2></div></div>
+      <div class="play-grid">
+        <article class="tool-panel interview-game">
+          <p class="kicker">01 / INTERVIEW SIMULATOR</p><h3>So, why this company?</h3>
+          <p>The room is quiet. The question is simple. Your answer does not have to be.</p>
+          <div class="question-bubble" lang="ko">저희 회사에 왜 지원하셨죠?</div>
+          <div class="answer-options">
+            <button class="answer" data-answer="excel" type="button">엑셀 단축키를 실전에 쓰고 싶어서요.</button>
+            <button class="answer" data-answer="coffee" type="button">커피가 무료라고 들었습니다.</button>
+            <button class="answer" data-answer="synergy" type="button">시너지를 시너지하고 싶어서요.</button>
+          </div>
+          <p class="result" id="interviewResult" aria-live="polite">Choose an answer. Confidence is your only qualification here.</p>
+        </article>
+        <article class="tool-panel phrase-tool">
+          <p class="kicker">02 / CORPORATE TRANSLATOR</p><h3>Sounds important.<br>Means almost nothing.</h3>
+          <p>For the moment when someone says, “Any final thoughts?”</p>
+          <blockquote id="phrase">“Let's align on the alignment before we realign.”</blockquote>
+          <p id="translation" class="translation">Translation: We need another meeting.</p>
+          <button id="phraseButton" class="button" type="button">Generate executive wisdom ↗</button>
+          <p class="small">Invented office jargon. Not a real Chanseok quote.</p>
+        </article>
+      </div>
+      <article class="bingo-panel">
+        <div class="bingo-copy"><p class="kicker">03 / MEETING SURVIVAL KIT</p><h3>Boardroom Bingo</h3><p>Hear it in a meeting? Mark it. Complete any row, column, or diagonal to win absolutely no equity.</p><p id="bingoStatus" class="bingo-status" aria-live="polite">0 / 9 marked. The meeting has just begun.</p><button id="resetBingo" class="button ghost" type="button">New meeting ↺</button></div>
+        <div class="bingo-grid" aria-label="Meeting bingo">
+          <button type="button" aria-pressed="false">“Let's circle back”</button><button type="button" aria-pressed="false">Someone is on mute</button><button type="button" aria-pressed="false">“Quick question”</button>
+          <button type="button" aria-pressed="false">One more slide</button><button type="button" aria-pressed="false">“Synergy”</button><button type="button" aria-pressed="false">Spreadsheet appears</button>
+          <button type="button" aria-pressed="false">“Can you see my screen?”</button><button type="button" aria-pressed="false">Budget mentioned</button><button type="button" aria-pressed="false">Meeting runs over</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-section fieldnotes" id="fieldnotes">
+      <div class="section-heading"><div><p class="kicker">OBSERVATIONS / PEER REVIEW PENDING</p><h2>Notes from the Boardroom</h2></div><p class="section-note">A completely fictional corporate field guide.</p></div>
+      <div class="notes-grid">
+        <article><span class="note-num">01</span><h3>The spreadsheet stare</h3><p>A quiet pause. A narrowed gaze. Somewhere, a cell has been formatted as text instead of a number.</p><span class="tag">THREAT LEVEL: #VALUE!</span></article>
+        <article><span class="note-num">02</span><h3>The oversized high-five</h3><p>For deals too large for a normal handshake. Please book a larger conference room before celebrating.</p><span class="tag">SYNERGY: HANDS-ON</span></article>
+        <article><span class="note-num">03</span><h3>The suspicious smile</h3><p>You called it a “small expense.” The receipt says otherwise. The calculator has already entered the conversation.</p><span class="tag">STATUS: RECEIPTS FOUND</span></article>
+      </div>
+      <div class="office-schedule"><p class="kicker">A DAY IN THE FICTIONAL OFFICE</p><div><span>09:00</span><p>Coffee. Open spreadsheet. Feel productive.</p></div><div><span>11:30</span><p>A quick meeting that develops its own sequel.</p></div><div><span>15:00</span><p>Rename the file to FINAL_final_v7_REAL.xlsx.</p></div><div><span>18:00</span><p>Close 37 tabs. Discover the important one was tab 38.</p></div></div>
+    </section>
+
+    <section class="content-section faq" id="faq">
+      <p class="kicker">FREQUENTLY UNASKED QUESTIONS</p><h2>Before you circle back.</h2>
+      <details><summary>Is this an official website?</summary><p>No. It is an unofficial fan-made humor page, with no claimed affiliation or endorsement.</p></details>
+      <details><summary>Are the captions and “executive wisdom” real quotes?</summary><p>The added captions, interview responses, and generated phrases are fictional jokes. The Korean speech bubbles are part of the images supplied for this page.</p></details>
+      <details><summary>How is CFO power calculated?</summary><p>Your scroll position charges the gauge. Each coffee click adds ten points, up to 100%. It measures page interaction, not anyone's actual abilities.</p></details>
+      <details><summary>What does winning bingo get me?</summary><p>One congratulatory message and the right to say “we should take this offline.” Your imaginary stock options remain imaginary.</p></details>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-label">ABOUT THIS PAGE</div>
+      <div>
+        <h2>Serious layout.<br>Unserious business.</h2>
+        <p>
+          An unofficial fan-made humor archive built around the supplied images. The captions,
+          interview answers, corporate phrases, and power levels are jokes written for this page,
+          not real statements or business data. No quarterly results. Just quarterly vibes.
+          <span class="micro-joke">Still reading? Very due-diligence of you.</span>
+        </p>
+      </div>
+      <div class="stat">
+        <strong>04</strong>
+        <span>selected frames</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>CHANSEOK ARCHIVE · NO SPREADSHEETS WERE HARMED</span>
+    <span>CURATED / 2026</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Archive image viewer" aria-hidden="true">
+    <button class="close" aria-label="Close">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
